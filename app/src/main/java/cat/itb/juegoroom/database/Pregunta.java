@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "Pregunta")
+@Entity(tableName = "pregunta_table")
 public class Pregunta {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id_pregunta")
@@ -12,8 +12,7 @@ public class Pregunta {
     private String enunciat;
     private String resposta;
 
-    public Pregunta(int id_pregunta, String enunciat, String resposta) {
-        this.id_pregunta = id_pregunta;
+    public Pregunta(String enunciat, String resposta) {
         this.enunciat = enunciat;
         this.resposta = resposta;
     }

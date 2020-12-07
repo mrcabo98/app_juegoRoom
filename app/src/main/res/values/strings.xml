@@ -5,6 +5,9 @@
     <string name="stats">Stats</string>
     <string name="introdueix_el_teu_nom">Introdueix el teu nom...</string>
     <string name="start">Start</string>
+    <string name="totalScore">PUNTUACIÓ FINAL: %1$d</string>
     <string name="escriu_la_resposta_i_polsa_enter">Escriu la resposta i polsa Enter</string>
     <string name="tornar">Tornar</string>
+    <string name="score_title">SCORE</string>
+    <string name="eliminar">RESET</string>
 </resources>

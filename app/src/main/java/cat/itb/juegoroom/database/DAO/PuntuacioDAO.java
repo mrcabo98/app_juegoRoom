@@ -11,14 +11,13 @@ import cat.itb.juegoroom.database.Puntuacio;
 
 @Dao
 public interface PuntuacioDAO {
+    @Query("SELECT * FROM puntuacio_table ORDER BY puntuacio DESC")
+    List<Puntuacio> getAll();
 
     @Insert
     void insert(Puntuacio p);
 
-    @Query("SELECT * FROM Puntuacio ORDER BY puntuacio DESC")
-    List<Puntuacio> getAll();
-
-    @Delete
-    void delete(Puntuacio p);
+    @Query("DELETE FROM puntuacio_table")
+    void deleteAll();
 
 }
